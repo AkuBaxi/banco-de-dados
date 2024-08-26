@@ -1,0 +1,127 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-image: url('/img/imagem.jpg'); /* Adicione o caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Aplicando um desfoque de 3px na imagem de fundo */
+    z-index: -1; /* Garante que esteja por trás do conteúdo */
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ .container { 
+
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+container h2 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão do k7 de enviar */
+
+.submit {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.submit input[type="submit"] {
+    cursor: pointer;
+    /* background-color: #f32525; */
+    padding: 15px 30px;
+    border-radius: 3px;
+    margin: 20px 0 10px 0; 
+}
+
+
+/* input[type="submit"]:hover {
+    background-color: #000000;
+} */
+
+.gender-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gender-container label {
+    margin-left: 20px;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+p a {
+    /* color: #f32525; */
+    text-decoration: none;
+}
+
+p.forgot-password {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px; /* Adicione a margem à esquerda para deslocar o texto */
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+/* style.css */
+
+/* Oculta a mensagem de sucesso inicialmente */
